@@ -1,3 +1,79 @@
+import Head from 'next/head';
+import Image from 'next/image'; // Import the Image component
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Your Salsa Brand</title>
+        <meta name="description" content="Delicious local salsa brand" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        {/* Hero Section */}
+        <section className="w-full text-center py-12">
+          <h1 className="text-5xl font-bold">Experience the Flavor of [Your Salsa Brand Name]</h1>
+          <p className="mt-4 text-xl">Handcrafted with fresh, local ingredients.</p>
+          {/* You can add an image here */}
+          {/* <Image src="/images/hero-salsa.jpg" alt="Delicious Salsa" width={600} height={400} className="mt-8 mx-auto" /> */}
+        </section>
+
+        {/* About Section */}
+        <section className="w-full py-12 bg-gray-100">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center">Our Story</h2>
+            <p className="mt-4 text-lg text-center">
+              [Write a brief and engaging story about your salsa brand, its origins, and values.]
+            </p>
+            {/* You can add an image here */}
+            {/* <Image src="/images/our-story.jpg" alt="Our Story" width={500} height={300} className="mt-8 mx-auto" /> */}
+          </div>
+        </section>
+
+        {/* Products Section */}
+        <section className="w-full py-12">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center">Our Salsas</h2>
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Placeholder for individual salsa product */}
+              <div className="text-center">
+                {/* <Image src="/images/salsa-mild.jpg" alt="Mild Salsa" width={300} height={200} className="mx-auto" /> */}
+                <h3 className="mt-4 text-xl font-semibold">Mild Salsa</h3>
+                <p className="mt-2">[Description of mild salsa]</p>
+              </div>
+              {/* Repeat for Medium and Hot salsa */}
+            </div>
+          </div>
+        </section>
+
+        {/* Local Shops Section */}
+        <section className="w-full py-12 bg-gray-100">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center">Find Our Salsa Locally</h2>
+            <p className="mt-4 text-lg text-center">
+              [List or map of local shops that sell your salsa.]
+            </p>
+            {/* You can add a map or list component here */}
+          </div>
+        </section>
+
+        {/* Call to Action / Online Order Section (Future) */}
+        <section className="w-full py-12 text-center">
+          <h2 className="text-3xl font-bold">Get Your Salsa Today!</h2>
+          <p className="mt-4 text-xl">
+            [Link to online store or a call to action for local purchase.]
+          </p>
+          {/* You can add a button component here */}
+        </section>
+      </main>
+
+      <footer className="w-full text-center py-8 border-t">
+        <p>&copy; {new Date().getFullYear()} [Your Salsa Brand Name]. All rights reserved.</p>
+      </footer>
+    </>
+  );
+}
 {
   "name": "nextn",
   "version": "0.1.0",
